@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9,7 +11,8 @@ display: flex;
 align-items: center;
 height: 16.5vh;
 background-color: #7d47a8b7;
-font-family: Montserrat;
+font-family: "Roboto",sans-serif; 
+font-style: italic;
 }
 
 .burger_menu div {
@@ -55,14 +58,12 @@ font-family: Montserrat;
   height: 30vh;
   top: 16.5vh;
   background-color: #ebb520d7;
-  align-items: stretch;
   flex-direction: column;
   width: 15%;
-  justify-content: center;
   text-align: center;
   transform: translateX(-100%);
   transition: 0.3s ease-in;
-  
+  line-height: 2.5;
 }
 .nav_links1 li {
   flex: 1 1 auto;
@@ -80,9 +81,19 @@ font-family: Montserrat;
   opacity: 0;
 }
 
+@keyframes navLinkFade {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
 .Logo {
   margin-left: 300px;
-  ;
 }
 
 .toggle .Line_1 {
@@ -99,5 +110,39 @@ font-family: Montserrat;
 
 body {
   overflow: hidden;
+}
+
+.image_container{
+display: flex;
+}
+
+.overlay{
+  position: absolute;
+  left: 850px;
+  top: 250px;
+  /* background: rgba(0, 0, 0, 0.65); */
+  color:#8e00ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.90;
+}
+
+.overlay h1 {
+  font-size: 85px;
+  letter-spacing: 0px;
+  margin: 0 0 5px;
+  font-family: "Roboto",sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.overlay p{
+  font-size: 45px;
+  letter-spacing: 0px;
+  margin: 0 0 5px;
+  font-family: "Roboto",sans-serif;
+  font-style: italic;
 
 }
