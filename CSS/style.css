@@ -124,13 +124,17 @@ display: flex;
   opacity: 0.90;
 }
 
-.overlay h1 {
+.t1 {
   font-size: 65px;
   letter-spacing: 0px;
   margin: 0 0 5px;
   font-family: 'Pacifico', cursive;
   font-style: italic;
+}
 
+.t1 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .overlay p{
