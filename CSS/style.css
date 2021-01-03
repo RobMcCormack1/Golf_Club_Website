@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-nav{
-display: flex;
-align-items: center;
-height:18vh;
-background-color: rgba(125, 71, 168, 0.60);
-font-family: "Roboto",sans-serif; 
-font-style: italic;
+nav {
+  display: flex;
+  align-items: center;
+  height: 18vh;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
 }
 
 .burger_menu div {
@@ -23,9 +25,9 @@ font-style: italic;
   margin: 6px;
   cursor: pointer;
   margin-left: 127px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in;
 }
-.burger_menu:hover  *{
+.burger_menu:hover * {
   background-color: rgb(0, 0, 0);
 }
 
@@ -41,7 +43,7 @@ font-style: italic;
   list-style: none;
 }
 
-.nav_links li:hover *{
+.nav_links li:hover * {
   color: rgb(0, 0, 0);
   transition: 0.3s ease;
 }
@@ -70,7 +72,7 @@ font-style: italic;
   transition: 0.3s ease-in;
   line-height: 2.5;
 }
- .nav_links1 li {
+.nav_links1 li {
   flex: 1 1 auto;
 }
 .nav_links1 :hover {
@@ -90,7 +92,6 @@ font-style: italic;
   margin-left: 300px;
 }
 
-
 .toggle .Line_1 {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
@@ -107,41 +108,99 @@ body {
   overflow: hidden;
 }
 
-.image_container{
-display: flex;
+.image_container {
+  display: flex;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   left: 450px;
   top: 350px;
   /* background: rgba(0, 0, 0, 0.65); */
-  color:#8e00ff;
+  color: rgba(238, 177, 97, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  opacity: 0.90;
+  color
 }
 
-.t1 {
+.overlay h1 {
   font-size: 65px;
   letter-spacing: 0px;
   margin: 0 0 5px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-style: italic;
 }
 
-.t1 .letter {
+.overlay h1 .letter {
   display: inline-block;
   line-height: 1em;
 }
 
-.overlay p{
+.overlay p {
   font-size: 45px;
   letter-spacing: 0px;
   margin: 0 0 5px;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
+}
+.overlay p .letterP {
+  display: inline-block;
+  line-height: 1em;
+}
 
+.media-links {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.media-links li {
+  list-style: none;
+}
+
+.media-links li a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.5s;
+}
+
+.media-links li a .fa {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.media-links li:nth-child(1) a:hover .fa {
+  color: #3b5998;
+}
+
+.media-links li:nth-child(2) a:hover .fa {
+  color: #00aced;
+}
+.media-links li:nth-child(3) a:hover .fa {
+  color: #007bb6;
+}
+
+.media-links li:nth-child(4) a:hover .fa {
+  color: #e4405f;
 }
