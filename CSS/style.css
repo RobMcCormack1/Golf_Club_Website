@@ -19,7 +19,7 @@ header{
 .burger_menu {
   display: block;
   cursor: pointer;
-  margin-left: -55px;
+  margin-left: 95px;
   width:42px;
   height: 38px;
 }
@@ -41,6 +41,7 @@ nav {
   display: flex;
   font-family: "Roboto", sans-serif;
   font-style: italic;
+  margin-left: 300px;
 }
 
 .nav_links {
@@ -62,16 +63,6 @@ nav {
 }
 
 .nav_links a{
-  flex: 1 1 auto;
-  text-decoration: none;
-  color: rgb(238, 232, 232);
-  letter-spacing: 4px;
-  font-weight: bold;
-  font-size: 27px;
-  transition: all 0.3s ease-in;
-}
-
-.nav_links1 a {
   text-decoration: none;
   color: rgb(238, 232, 232);
   letter-spacing: 4px;
@@ -99,6 +90,14 @@ nav {
 }
 .nav_links1 :hover {
   background-color: #2180268e;
+}
+.nav_links1 a {
+  text-decoration: none;
+  color: rgb(238, 232, 232);
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 27px;
+  transition: all 0.3s ease-in;
 }
 
 .nav_active {
@@ -155,7 +154,7 @@ body {
 
 .overlay h1 .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 2em;
 }
 
 .overlay p {
@@ -168,6 +167,27 @@ body {
 .overlay p .letterP {
   display: inline-block;
   line-height: 1em;
+}
+
+.contact-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:13vh;
+}
+
+.contact-links li{
+  list-style:none;
+}
+
+.contact-links li a{
+
+  text-decoration: none;
+  font-size: 24px;
+  color: #072c24;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
 }
 
 .media-links {
