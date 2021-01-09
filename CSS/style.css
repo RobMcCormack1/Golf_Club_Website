@@ -88,9 +88,17 @@ nav {
 .nav_links1 li {
   flex: 1 1 auto;
 }
-.nav_links1 :hover {
+
+.nav_links1 li:hover {
   background-color: #2180268e;
+  transition: 0.3s ease-in;
 }
+
+.nav_links1 li:hover * {
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease;
+}
+
 .nav_links1 a {
   text-decoration: none;
   color: rgb(238, 232, 232);
