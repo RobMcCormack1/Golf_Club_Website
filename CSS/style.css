@@ -172,7 +172,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: italic;
 }
-.overlay p .letterP {
+.overlay p .letter {
   display: inline-block;
   line-height: 1em;
 }

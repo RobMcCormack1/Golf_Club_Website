@@ -1,8 +1,11 @@
 //Wrap every letter in a span
-var textWrapper = document.querySelector('.overlay h1');
-var textWrapperP = document.querySelector('.overlay p');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-textWrapperP.innerHTML = textWrapperP.textContent.replace(/\S/g, "<span class='letterP'>$&</span>");
+var textWrapper = document.querySelectorAll('.overlay *');
+console.log(textWrapper);
+
+for (let i=0; i < textWrapper.length; i++) {
+  const anchor = textWrapper[i];
+    textWrapper[i].innerHTML = textWrapper[i].textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+}
 
 anime.timeline({loop: true})
   .add({
@@ -12,7 +15,7 @@ anime.timeline({loop: true})
     duration: 1400,
     delay: (el, i) => 30 * i
   }).add({
-    targets: '.overlay p .letterP',
+    targets: '.overlay p .letter',
     scale: [4,1],
     opacity: [0,1],
     translateZ: 0,
@@ -32,4 +35,5 @@ anime.timeline({loop: true})
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
-  });
+  })
+

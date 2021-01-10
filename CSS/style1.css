@@ -18,10 +18,32 @@ header{
     letter-spacing: 0px;
     font-family: "Pacifico", sans-serif;
     font-style: italic;
+    color: rgba(223, 10, 223, 0.95);
 }
 
   body{
     /* display:flex; */  
+  }
+
+  nav li {
+    list-style: none;
+
+  }
+
+  nav a:hover{
+      color: rgb(0, 0, 0);
+      transition: 0.3s ease;
+    }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(238, 232, 232);
+    transition: 0.3s ease-in ;
+  }
+
+
+  nav span, nav .fa{
+    pointer-events: none;
   }
   section{
     display: flex;
@@ -53,4 +75,5 @@ header{
     width: 60%;
     height: 60%;
     filter: invert(.5) sepia(1) saturate(99) hue-rotate(100deg);
+    cursor: pointer;
   }
