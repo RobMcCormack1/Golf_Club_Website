@@ -4,9 +4,8 @@ window.onload = () => {
   //select class of transition
   const transition_element = document.querySelector(".transition");
 
-  //console.log(transition_element);
-
   //console.log(transition_element.classList.length);
+
   setTimeout(() => {
     //remove class, thus class to added later for for transition effect click
     transition_element.classList.remove("active");
@@ -30,4 +29,3 @@ window.onload = () => {
     });
   }
 };
-// pageTransition();

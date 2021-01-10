@@ -8,19 +8,18 @@
   box-sizing: border-box;
 }
 
-header{
+header {
   display: flex;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   height: 18vh;
   align-items: center;
   justify-content: space-around;
-
 }
 .burger_menu {
   display: block;
   cursor: pointer;
   margin-left: 95px;
-  width:42px;
+  width: 42px;
   height: 38px;
 }
 .burger_menu div {
@@ -53,7 +52,7 @@ nav {
   list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
   margin-left: 50px;
 }
 
@@ -62,7 +61,7 @@ nav {
   transition: 0.3s ease;
 }
 
-.nav_links a{
+.nav_links a {
   text-decoration: none;
   color: rgb(238, 232, 232);
   letter-spacing: 4px;
@@ -177,19 +176,18 @@ body {
   line-height: 1em;
 }
 
-.contact-links{
+.contact-links {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height:13vh;
+  height: 13vh;
 }
 
-.contact-links li{
-  list-style:none;
+.contact-links li {
+  list-style: none;
 }
 
-.contact-links li a{
-
+.contact-links li a {
   text-decoration: none;
   font-size: 24px;
   color: #072c24;
