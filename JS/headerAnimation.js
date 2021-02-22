@@ -1,10 +1,10 @@
 //Wrap every letter in a span
 var textWrapper = document.querySelectorAll('.overlay *');
-console.log(textWrapper);
+// console.log(textWrapper);
 
 for (let i=0; i < textWrapper.length; i++) {
   const anchor = textWrapper[i];
-    textWrapper[i].innerHTML = textWrapper[i].textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  textWrapper[i].innerHTML = textWrapper[i].textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 }
 
 anime.timeline({loop: true})

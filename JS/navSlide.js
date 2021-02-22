@@ -4,6 +4,7 @@ const navSlide = () => {
   const nav = document.querySelector(".nav_links");
 
   burger_menu.addEventListener("click", () => {
+    //Nav animation
     nav1.classList.toggle("nav_active");
     nav.classList.toggle("nav_deactive");
 
